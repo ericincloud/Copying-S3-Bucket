@@ -22,7 +22,7 @@ If done correctly, `index.html` and `avatarmaker.png` both will get copied to th
 ![IMAGE](https://github.com/ericincloud/Copying-S3-Bucket/blob/main/destinationbucket2.JPG)
 
 ## Step 3: Emptying an S3 Bucket
-#### After syncing/copying the files to the destiantion bucket, the source bucket bucket can now be emptied and deleted. To do so, enter this command: `aws s3 rm s3://testbucket-source1231 --recursive`
+#### After syncing/copying the files to the destination bucket, the source bucket bucket can now be emptied and deleted. To do so, enter this command: `aws s3 rm s3://testbucket-source1231 --recursive`
 
 If done correctly, the source bucket should be completely emptied!
 
