@@ -20,3 +20,32 @@
 If done correctly, `index.html` and `avatarmaker.png` both will get copied to the destination bucket.
 
 ![IMAGE](https://github.com/ericincloud/Copying-S3-Bucket/blob/main/destinationbucket2.JPG)
+
+## Step 3: Emptying an S3 Bucket
+#### After syncing/copying the files to the destiantion bucket, the source bucket bucket can now be emptied and deleted. To do so, enter this command: `aws s3 rm s3://testbucket-source1231 --recursive`
+
+If done correctly, the source bucket should be completely emptied!
+
+![IMAGE](https://github.com/ericincloud/Copying-S3-Bucket/blob/main/sourcebucket2.JPG)
+
+## Step 4: Deleting an S3 Bucket
+#### Now, lets delete the emptied source bucket. Enter command: `aws s3 rb s3://testbucket-source1231`
+Congratulations! All files within the source bucket and the bucket itself should be now deleted! Previous files from the source bucket should be in the destination bucket!
+
+![IMAGE](https://github.com/ericincloud/Copying-S3-Bucket/blob/main/destinationbucket3.JPG)
+
+## Reference
+
+Copy file to another bucket:
+`aws s3 cp s3://source-bucket/example.txt s3://destination-bucket/example.txt`
+
+Sync/Copy Entire bucket:
+`aws s3 sync s3://source-bucket s3://destination-bucket`
+
+Empty bucket:
+`aws s3 rm s3://bucket-name --recursive`
+
+Delete bucket:
+`aws s3 rb s3://bucket-name`
+
+
