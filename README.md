@@ -8,7 +8,7 @@
 
 #### From the AWS Console, launch the AWS CloudShell. To copy the `style.css` file to the desination bucket, we must use this command: `aws s3 cp s3://testbucket-source1231/style.css s3://testbucket-destination1231/style.css` 
 
-![IMAGE](https://github.com/ericincloud/Copying-S3-Bucket/blob/main/cloudshell1.JPG)
+![IMAGE](https://github.com/ericincloud/S3-Bucket-Guide---Copy-Sync-Delete/blob/main/cloudshell1.JPG)
 
 `style.css` can now be found in the destination bucket! 
 
