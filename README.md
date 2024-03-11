@@ -30,7 +30,7 @@ If done correctly, the source bucket should be completely emptied!
 
 ## Step 4: Deleting an S3 Bucket
 #### Now, lets delete the emptied source bucket. Enter command: `aws s3 rb s3://testbucket-source1231`
-Congratulations! All files within the source bucket and the bucket itself should be now deleted! Previous files from the source bucket should be in the destination bucket!
+#### Congratulations! All files within the source bucket and the bucket itself should be now deleted! Previous files from the source bucket should be in the destination bucket!
 
 ![IMAGE](https://github.com/ericincloud/Copying-S3-Bucket/blob/main/destinationbucket3.JPG)
 
